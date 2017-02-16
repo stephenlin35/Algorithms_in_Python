@@ -1,0 +1,10 @@
+# Give example of a Python code fragment that attempts to write an element to a list based on an index that may be out of bounds. If that index is out of bounds, the program should catch the exception that results, and print a error message.
+
+c = [0] * 3
+try:
+    for i in range(4):
+        print(c[i])
+except IndexError:
+    print('Don\'t try buffer overflow attacks in Python')
+
+
