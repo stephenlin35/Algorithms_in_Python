@@ -14,6 +14,12 @@ class Vector:
         for i in range(len(self)):
             result[i] = self[i] * num
         return result
+    
+    def __rmul__(self, num):
+        result = Vector(len(self))
+        for i in range(len(self)):
+            result[i] = self[i] * num
+        return result
 
     def __getitem__(self, i):
         return self._coords[i]
